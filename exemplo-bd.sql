@@ -53,13 +53,23 @@ select
 	nm_login, nm_email 
 from tb_usuario;
 
+
 select 
 	cd_usuario, nm_usuario, 
 	nm_login, nm_email 
 from tb_usuario
 where 
-	nm_login = 'Parametro que eu mandar'  AND 
-	ds_senha = 'parametro senhaaa que eu mandar';
+-- 	nm_login = 'Parametro que eu mandar'  AND 
+	ds_senha = '123mudar';
 
 -- --------------------------
-
+/*  
+update tb_usuario
+set ds_senha = '123mudar'
+where cd_usuario = 1 
+*/ 
+-- --------------------------
+/*
+delete from tb_usuario
+where cd_usuario = 1 
+*/
